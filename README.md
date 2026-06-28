@@ -1,4 +1,4 @@
-TODO: Create a install script to move dotfiles from original correct location to this directory then create a symlink
+TODO: Create an install script to move dotfiles from original correct location to this directory then create a symlink
 
 Example:
 
