@@ -1,5 +1,12 @@
 Welcome to my nvim config
 
+# Transparent Settings:
+To untoggle transparent settings
+1. Disable config.transparent in init.lua
+2. Set transparent to false in kanagawa theme
+3. Uncomment LineNr and SignColumn set to #1F1F28
+4. Optional: comment out NeoTreeCursorLine && TelescopeSelection set to #414157
+
 # Plugins:
 
 vim-gitgutter - show git differences (added, removed, modified) in sign column
