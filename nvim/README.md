@@ -10,6 +10,9 @@ To untoggle transparent settings
 # Plugins:
 
 vim-gitgutter - show git differences (added, removed, modified) in sign column
+^ Useful mapping:\
+Go to next hunk of modified files - `]c`
+Go to previous hunk of modified files - `[c`
 
 treesitter - syntax highlighting
 
