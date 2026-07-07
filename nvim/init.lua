@@ -17,4 +17,5 @@ vim.opt.rtp:prepend(lazypath)
 
 require("keymaps")
 require("lazy").setup("plugins") -- Setup lazy.nvim
-require("vim-options") 
+require("vim-options")
+require("config.transparent").enable() -- enable when terminal background is transparent

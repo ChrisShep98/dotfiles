@@ -3,8 +3,9 @@ return {
     "rebelot/kanagawa.nvim",
     config = function()
       require('kanagawa').setup({
+        transparent = true, -- default false unless you want transparent enabled in your terminal
         commentStyle = { italic = false },
-        keywordStyle = { italic = false},
+        keywordStyle = { italic = false },
         statementStyle = { bold = false },
         overrides = function(colors)
           local theme = colors
@@ -21,8 +22,8 @@ return {
             ["@constant.builtin.typescript"] = { fg = "#7aa89f" },
             ["@constant.builtin.tsx"] = { fg = "#7aa89f" },
             ["@constant.typescript"] = { fg = theme.fujiWhite },
-            ["@constant.tsx"] = { fb = theme.fujiWhite },
-            ["@constant.bash"] = { fb = theme.fujiWhite },
+            ["@constant.tsx"] = { fg = theme.fujiWhite },
+            ["@constant.bash"] = { fg = theme.fujiWhite },
             ["@punctuation.special.tsx"] = { fg = "#9CABCA" },
             -- Semantic Token overrides
             ["@lsp.mod.readonly.typescriptreact"] = { fg = theme.fujiWhite },
@@ -36,8 +37,13 @@ return {
             NeoTreeFileName = { fg = "#ffffff" },      -- File names
             NeoTreeDirectoryName = { fg = "#ffffff" }, -- Directory names
             NeoTreeGitModified = { fg = "#E6C384" },
-            LineNr = { bg = "#1F1F28" },
-            SignColumn = { bg = "#1F1F28" }
+            -- uncomment below two lines when transparent = false
+            -- LineNr = { bg = "#1F1F28" },
+            -- SignColumn = { bg = "#1F1F28" },
+
+            -- Below lines are for transparent mode, but they look fine with either tbh
+            NeoTreeCursorLine = { bg = "#414157" },
+            TelescopeSelection = { bg = "#414157" },
           }
         end,
       })
