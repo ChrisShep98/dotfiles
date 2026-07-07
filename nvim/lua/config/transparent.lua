@@ -70,6 +70,12 @@ function M.enable()
         "BufferTabpages",
         "BufferTabpage",
       })
+
+      -- lazygit: make its floating window match Telescope's look.
+      -- The plugin defines these with `default = true` on window open, so
+      -- these non-default links win and are respected.
+      -- I had to modify the config.yml file in 'Library/Application/ Support' to change color of the rest of the borders
+      vim.api.nvim_set_hl(0, "LazyGitBorder", { link = "TelescopeBorder" })
     end,
   })
 
